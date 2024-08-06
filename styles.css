@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* 
+
+
+
+*/
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    background: #333;
+  }
+  
+  /* Slides */
+  .mySlides {
+    display: none;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Fira Code', monospace;
+    color: #ffffff;
+
+  }
+
+  .tbig {
+    font-family: 'Fira Code', monospace;
+    color: #FFA500;
+    font-size: 40px;
+    margin: 10px;
+
+}
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #ff00009f;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+  }
+  
+  
+  
+  
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 200px;
+    text-align: center;
+    position: relative;
+}
+
+header h5 {
+    margin: 10px;
+    font-family: 'Fira Code', monospace;
+}
+
+
+header h1 {
+    margin-top: 30px;
+    margin-bottom: 150px;
+    font-family: 'Fira Code', monospace;
+    font-size: 80px;
+}
+
+.blink {
+    font-family: 'Fira Code', monospace;
+    margin: 1rem 0;
+}
+
+.static-text {
+    color: gold;
+}
+
+.blink-text {
+    color: white;
+    animation: blink 1s steps(2, start) infinite;
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+header p {
+    margin: 0.5rem 0;
+    font-family: 'Fira Code', monospace;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Fira Code', monospace;
+}
+
+header .menu-toggle {
+    display: none;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+#about {
+    backdrop-filter: blur(20px);
+    font-size: 80px;
+    margin-bottom: 20px;
+    font-family: 'Fira Code', monospace;
+    text-align: top;
+    color: rgb(0, 0, 0);
+
+
+}
+
+.comment {
+    font-size: 15px;
+    font-family: Cascadia Mono;
+    color:rgb(59, 53, 14) ;
+    font-style: italic;
+}
+
+.me {
+    font-family: 'Fira Code', monospace;
+    color: #000000;
+    margin-top: 30px;
+    font-size: 30px ;
+}
+section {
+    padding: 2rem;
+    text-align: center;
+    font-family: 'Fira Code', monospace;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    font-family: 'Fira Code', monospace;
+}
+
+a {
+    color: #00f;
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    header .menu-toggle {
+        display: block;
+    }
+
+    header nav ul.show {
+        display: flex;
+    }
+}
